@@ -6,6 +6,11 @@
 //  Copyright © 2017年 rockgarden. All rights reserved.
 //
 
+/*:
+ MVC 架构的项目来说，其实最大的挑战在于维护 Controller。而想要有良好维护的 Controller，最大的挑战又在于保持良好的测试覆盖。因为往往 View Controller 中会包含很多状态，而且会有不少异步操作和用户触发的事件，所以测试 Controller 从来都不是一件简单的事情。
+ */
+
+
 import XCTest
 
 /// 重要: Test Target 和 App Target 的 DEPLOYMENT_TARGET 参数必须取值相同，不然会报 no such module。
@@ -63,6 +68,7 @@ class MVCTests: XCTestCase {
             dataSource:TableViewControllerDataSource(todos: [], owner: nil),
             text: ""
         )
+        // 从 nil 状态转换为 state1
         let state2 = TableViewController.State(
             dataSource:TableViewControllerDataSource(todos: ["1", "3"], owner: nil),
             text: "Hello"
@@ -77,6 +83,7 @@ class MVCTests: XCTestCase {
             text: "onevcat"
         )
         
+        // 从 state1 状态转换为 state2
         controller.stateDidChanged(state: state2, previousState: state1, command: nil)
         XCTAssertEqual(controller.title, "TODO - (2)")
         XCTAssertEqual(controller.tableView.numberOfRows(inSection: TableViewControllerDataSource.Section.todos.rawValue), 2)
@@ -119,6 +126,7 @@ class MVCTests: XCTestCase {
         XCTAssertEqual(controller.store.state.text, "Hello")
     }
     
+    /// 检查 reducer 返回的 Command 来确认加载的结果
     func testLoadToDos() {
         let initState = TableViewController.State()
         let (_, command) = controller.reducer(initState, .loadToDos)
