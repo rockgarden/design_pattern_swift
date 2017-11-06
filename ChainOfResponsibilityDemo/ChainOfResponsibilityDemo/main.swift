@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: setting our master mechanics
 var steve = Mechanic(skill: .MasterMechanic, name: "Steve Frank")
 var joe = Mechanic(skill: .MasterMechanic, name: "Joe Alison")
 var jack = Mechanic(skill: .MasterMechanic, name: "Jack Ryan")
@@ -46,6 +47,8 @@ var oilChangeOnlyes = MechanicSkillGroup(skill: .OilChangeOnly,
                                          mechanics: [grant],
                                          nextLevel: juniorMechanics)
 
+
+// MARK: define our shop and jobs
 var shop = Shop(firstMechanics: oilChangeOnlyes)
 
 var jobs = [Job(minimumSkillSet: .Junior, name: "Windshield Viper"),
