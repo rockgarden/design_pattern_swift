@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ChainOfResponsibilityDemo/ChainOfResponsibilityDemo.xcodeproj">
+      location = "group:InterpreterDemo/InterpreterDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ChainOfResponsibility/ChainOfResponsibility.xcodeproj">
+      location = "group:ChainOfResponsibilityDemo/ChainOfResponsibilityDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:MVC/MVC.xcodeproj">
