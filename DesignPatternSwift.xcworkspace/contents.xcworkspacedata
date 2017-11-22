@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MediatorDemo/MediatorDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:InterpreterDemo/InterpreterDemo.xcodeproj">
    </FileRef>
    <FileRef

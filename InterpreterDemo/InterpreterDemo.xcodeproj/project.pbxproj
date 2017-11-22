@@ -47,7 +47,7 @@
 		44B6F6B41FB1DDA000F01A24 /* quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quote.swift; sourceTree = "<group>"; };
 		44B6F6B51FB1DDA000F01A24 /* subtract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subtract.swift; sourceTree = "<group>"; };
 		44B6F6B61FB1DDA000F01A24 /* variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = variable.swift; sourceTree = "<group>"; };
-		44B6F6C01FB1DE5300F01A24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		44B6F6C01FB1DE5300F01A24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 		44B6F6C11FB1E48800F01A24 /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
