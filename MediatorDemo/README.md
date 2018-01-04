@@ -5,9 +5,10 @@ For a cheat-sheet of design patterns implemented in Swift check out <a href="htt
 
 <h3>The problem:</h3>
 Assume we track the location of all our mobile mechanics. We have noticed that there are times when a mobile mechanic might need assistance from another mechanic or a last minute need for a part that someone else might carry. We want to build a system where mechanics can send requests with the option of defining specific parts needed to all mechanics that are close to their location.
+假设我们跟踪所有移动机械的位置。 我们已经注意到，有时候移动机械师可能需要另一个机械师的帮助，或者最后一刻需要别人可能携带的部件。 我们希望建立一个系统，在这个系统中，机械师可以发送请求，选择定义所有靠近他们位置的机械所需的特定部件。
 <h3>The solution:</h3>
 We will define a mediator and have have every mechanics register with it. When a mechanic sends a request, the mediator will detect all close by mechanics and forwards the request to them.
-
+我们将定义一个调解员，并有每个机制注册。 当技工发送请求时，调解员将检测到所有靠近机制的人，并将请求转发给他们。
 <!--more-->
 
 Link to the repo for the completed project: <a href="https://github.com/kingreza/Swift-Mediator"> Swift - Mediator </a>
