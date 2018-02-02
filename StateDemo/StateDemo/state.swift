@@ -9,8 +9,9 @@
 import Foundation
 
 protocol State {
-  func getPrice(context: Context) -> Double?
-  func getMessageToCustomer(context: Context) -> String
-  func getAssignedMechanic(context: Context) -> Mechanic?
-  func getReceipt(context: Context) -> Receipt?
+    func getPrice(context: Context) -> Double?
+    func getMessageToCustomer(context: Context) -> String
+    /// 需要能够得到分配的技工
+    func getAssignedMechanic(context: Context) -> Mechanic?
+    func getReceipt(context: Context) -> Receipt?
 }

@@ -9,13 +9,13 @@
 import Foundation
 
 class Receipt {
-  var delivered: Bool
-  var total: Double
-  var customerName: String
-
-  init(delivered: Bool, total: Double, customerName: String) {
-    self.delivered = delivered
-    self.total = total
-    self.customerName = customerName
-  }
+    var delivered: Bool
+    var total: Double
+    var customerName: String
+    
+    init(delivered: Bool, total: Double, customerName: String) {
+        self.delivered = delivered
+        self.total = total
+        self.customerName = customerName
+    }
 }

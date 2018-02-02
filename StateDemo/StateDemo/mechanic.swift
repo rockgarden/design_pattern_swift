@@ -9,9 +9,9 @@
 import Foundation
 
 class Mechanic {
-  let name: String
-
-  init(name: String) {
-    self.name = name
-  }
+    let name: String
+    
+    init(name: String) {
+        self.name = name
+    }
 }

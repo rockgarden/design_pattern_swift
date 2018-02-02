@@ -57,6 +57,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C213C22F20243AEA0099AFA3 /* state */ = {
+			isa = PBXGroup;
+			children = (
+				C28187F420235BF60067D47C /* completed_state.swift */,
+				C28187F220235BF60067D47C /* pending_state.swift */,
+				C28187F320235BF60067D47C /* ready_state.swift */,
+				C28187F620235BF60067D47C /* submitted_state.swift */,
+				C28187F520235BF60067D47C /* booked_state.swift */,
+			);
+			path = state;
+			sourceTree = "<group>";
+		};
 		C28187AB202349410067D47C = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +89,8 @@
 		C28187B6202349410067D47C /* StateDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C28187F520235BF60067D47C /* booked_state.swift */,
-				C28187F420235BF60067D47C /* completed_state.swift */,
-				C28187F220235BF60067D47C /* pending_state.swift */,
-				C28187F320235BF60067D47C /* ready_state.swift */,
-				C28187F620235BF60067D47C /* submitted_state.swift */,
 				C28187B7202349410067D47C /* main.swift */,
+				C213C22F20243AEA0099AFA3 /* state */,
 				C28187ED20234A250067D47C /* state.swift */,
 				C28187EA20234A250067D47C /* context.swift */,
 				C28187EC20234A250067D47C /* mechanic.swift */,
