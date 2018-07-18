@@ -1,4 +1,7 @@
-<h1>Design Patterns in Swift: Strategy</h1>
+<h1>Design Patterns: Strategy 策略</h1>
+The strategy pattern is used to create an interchangeable family of algorithms from which the required process is chosen at run-time.
+策略模式用于创建可互换的算法族，在运行时从中选择所需的过程。
+
 This repository is part of a series. For the full list check out <a href="https://shirazian.wordpress.com/2016/04/11/design-patterns-in-swift/">Design Patterns in Swift</a>
 
 For a cheat-sheet of design patterns implemented in Swift check out <a href="https://github.com/ochococo/Design-Patterns-In-Swift"> Design Patterns implemented in Swift: A cheat-sheet</a>
